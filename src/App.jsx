@@ -4,6 +4,7 @@ import FromTween from './components/FromTween';
 import FromToTween from './components/FromToTween';
 import TimeLine from './components/TimeLine';
 import SimpleTimeLine from './components/SimpleTimeline';
+import OverlappingTimeline from './components/OverlappingTimeline';
 function App() {
 {/* <main className='w-full min-h-screen bg-gray-900 p-8 absolute'>
         <h1 className='text-center text-4xl font-bold text-white'>Gsap + React</h1>
@@ -14,10 +15,12 @@ function App() {
         <FromToTween />
         <hr className="my-8 border-gray-700  " />
         <TimeLine />
+            <SimpleTimeLine />      
+
       </main> */}
   return (
     <main className='w-full min-h-screen bg-gray-900 p-8 absolute'>
-    <SimpleTimeLine />      
+      <OverlappingTimeline />
     </main>
     
     
