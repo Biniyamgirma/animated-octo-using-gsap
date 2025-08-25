@@ -1,4 +1,4 @@
-import React, {useEffect , useRef} from 'react';
+import React, { useRef} from 'react';
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 
@@ -6,7 +6,7 @@ const SimpleTween = ()=>{
     const container = useRef(null);
     useGSAP(()=>{
      gsap.to('.box',{
-            x:600,
+            x:450,
             duration:2,
             rotation:360,
             backgroundColor: '#8d3dae',
