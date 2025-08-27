@@ -5,13 +5,21 @@ import {useGSAP} from '@gsap/react';
 const OverlappingTimeline = () => {
     const ref = useRef(null);
     useGSAP(()=>{
-        const t1 = gsap.timeline();
+        const t1 = gsap.timeline(
+            {
+                defaults:{
+                    duration:0.8,
+                    ease:'power2.out'
+                }
+            }
+        );
         t1.from('.title',{
             opacity:0,
             y:-50,
             duration:1,
             ease:'power2.out',
         })
+        .add("subtitleStart","-=0.5")
         .from(
             '.subtitle',
             {
@@ -19,14 +27,15 @@ const OverlappingTimeline = () => {
                 y:50,
                 duration:1,
                 ease:'power2.out',
-            }
+            },
+            "subtitleStart"
         )
-        .from('.buttion',{
+        .from('.button',{
             opacity:0,
             scale:0,
             duration:0.8,
             ease:'back.out(1.7',
-        },'<')
+        },'subtitleStart')
     },{scope:ref});
 
     return(

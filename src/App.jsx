@@ -17,12 +17,12 @@ function App() {
         <hr className="my-8 border-gray-700  " />
         <TimeLine />
             <SimpleTimeLine />      
-            <OverlappingTimeline />
-
+            
+<ControlledTimeline />
       </main> */}
   return (
     <main className='w-full min-h-screen bg-gray-900 p-8 absolute'>
-      <ControlledTimeline />
+      <OverlappingTimeline />
     </main>
     
     
