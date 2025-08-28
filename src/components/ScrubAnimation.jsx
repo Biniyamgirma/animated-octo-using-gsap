@@ -25,7 +25,7 @@ const ScrubAnimation = () => {
             <div className="scroll-section h-[200vh] bg-gray-800.p-8 relative">
                 <div className="sticky top-0 left-0 w-full pt-8">
                     <h2 className="text-4xl text-center mb-4">Schroll Throuh Me</h2>
-                    <div className="w full bg-gray-600 h-4 rounded-full">
+                    <div className="w-full bg-gray-600 h-4 rounded-full">
                         <div className="progress-bar w-full h-full bg-green-500 rounded-full origin-left transform scale-x-0"></div>
                     </div>
                 </div>
