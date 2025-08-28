@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import mountainImage from '../../public/images/mountain.jpg';
+import mountainImage from '../images/mountain1.jpg';
 
 const ParallaxScroll = () => {
     const container = useRef(null);
@@ -16,7 +16,7 @@ const ParallaxScroll = () => {
                 scrub:true,
             }
         })
-        .to('.hero-text',{
+        gsap.to('.hero-text',{
             y:100,
             opacity:0,
             ease:'none',
