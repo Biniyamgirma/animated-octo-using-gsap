@@ -12,7 +12,6 @@ const PinningSection = () => {
                 end:"bottom top",
                 scrub:true,
                 pin:true,
-                markers:true,
             }
         });
         tl.from('.list-item-1',{x:200,opacity:0})

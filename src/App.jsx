@@ -10,6 +10,7 @@ import SimpleScroll from './components/SimpleScroll';
 import ScrubAnimation from './components/ScrubAnimation';
 import ParallaxScroll from './components/ParallaxScroll';
 import PinningSection from './components/PinningSection';
+import BatchScroll from './components/BatchScroll';
 function App() {
 {/* <main className='w-full min-h-screen bg-gray-900 p-8 absolute'>
         <h1 className='text-center text-4xl font-bold text-white'>Gsap + React</h1>
@@ -28,9 +29,11 @@ function App() {
                   <ScrubAnimation />    
 <ParallaxScroll />
 <ControlledTimeline />
+    <PinningSection />
+
       </main> */}
   return (
-    <PinningSection />
+    <BatchScroll />
   )
 }
 
