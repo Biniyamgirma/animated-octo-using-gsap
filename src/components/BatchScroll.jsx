@@ -8,11 +8,12 @@ const BatchScroll = () => {
     useGSAP(()=>{
         ScrollTrigger.batch(".card",{
             onEnter: batch => {
-                gsap.from(batch,{
-                    opacity:0,
+                gsap.to(batch,{
+                    opacity:1,
                     y:50,
+                    delay:0.1,
                     stagger:0.15,
-                    ease:"power2.out",
+                    ease:"power3.out",
                 });
             },
             onLeaveBack: batch=>{
@@ -36,7 +37,7 @@ const BatchScroll = () => {
             <h2 className="text-4xl text-center mb-8">Batch Animation</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 {cards.map((_,index)=>(
-                    <div key={index} className="card bg-gray-800 text-green-500 p-8 rounded-lg text-center opacity-1">
+                    <div key={index} className="card bg-gray-800 text-green-500 p-8 rounded-lg text-center opacity-0 ">
                         Card {index + 1}
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, deserunt.</p>
                     </div>
