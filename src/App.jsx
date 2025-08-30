@@ -30,10 +30,10 @@ function App() {
 <ParallaxScroll />
 <ControlledTimeline />
     <PinningSection />
+    <BatchScroll />
 
       </main> */}
   return (
-    <BatchScroll />
   )
 }
 
