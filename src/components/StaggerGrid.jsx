@@ -13,7 +13,7 @@ const StaggerGrid = () => {
             stagger:{
                 each:0.1,
                 from:"start",
-                grid:"auto"
+                grid:"auto",
             }
         })
     },{scope:container});
