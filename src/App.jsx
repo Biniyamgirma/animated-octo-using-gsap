@@ -12,6 +12,7 @@ import ParallaxScroll from './components/ParallaxScroll';
 import PinningSection from './components/PinningSection';
 import BatchScroll from './components/BatchScroll';
 import StaggerGrid from './components/StaggerGrid';
+import DrawSVG from './components/DrawSvg';
 function App() {
 {/* <main className='w-full min-h-screen bg-gray-900 p-8 absolute'>
         <h1 className='text-center text-4xl font-bold text-white'>Gsap + React</h1>
@@ -32,10 +33,11 @@ function App() {
 <ControlledTimeline />
     <PinningSection />
     <BatchScroll />
+    <StaggerGrid />
 
       </main> */}
   return (
-    <StaggerGrid />
+    <DrawSVG />
   )
 }
 
