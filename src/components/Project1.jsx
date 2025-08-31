@@ -9,7 +9,24 @@ const Project1 = () => {
         const tl = gsap.timeline({
             defaults:{duration:1.5,ease:"power2.out"}
         });
-
+        tl.fromTo(container.current.querySelector('img'),{scale:1.2},{scale:1.5,duration:4})
+        .from('.word-1',{
+            y:100,
+            opacity:0,
+            stagger:0.3,
+        },"-=1")
+        .from('.sub-heading',{
+            y:100,
+            opacity:0,
+            duration:.5,
+            ease:"power2.out"
+        },">")
+        .from('.btnContainer',{
+            y:100,
+            opacity:0,
+            duration:1,
+            ease:"bounce.out"
+        },"-=0.5")
     },{scope:container});
 
     return (
@@ -19,9 +36,9 @@ const Project1 = () => {
                 <div className="absolute top-0 left-0 flex flex-col justify-center items-center min-h-screen overflow-hidden w-full">
                 <h1 className="text-6xl text-white p-3">
                     <span className='word-1'>Hello</span>
-                    <span className='word-2'> From</span>
-                    <span className='word-3'> My </span>
-                    <span className='word-4'>
+                    <span className='word-1'> From</span>
+                    <span className='word-1'> My </span>
+                    <span className='word-1'>
                          Animation
                     </span>
                 </h1>
